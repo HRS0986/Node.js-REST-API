@@ -1,0 +1,116 @@
+{
+  "facilities": [
+    {
+      "facilityName": "Facility Two",
+      "shortCode": "FT",
+      "idDs": "5",
+      "activity": false,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "facilityName": "fdfhdh",
+      "shortCode": "fdgT",
+      "idDs": 9,
+      "activity": true
+    },
+    {
+      "id": 4,
+      "facilityName": "tyrtro",
+      "shortCode": "t",
+      "idDs": 9,
+      "activity": false
+    },
+    {
+      "id": 5,
+      "facilityName": "F675uhty sdo",
+      "shortCode": "uT",
+      "idDs": 67,
+      "activity": false
+    },
+    {
+      "id": 6,
+      "facilityName": "Ffghytwo",
+      "shortCode": "zT",
+      "idDs": 5,
+      "activity": true
+    },
+    {
+      "id": 8,
+      "facilityName": "yyyyyyy",
+      "shortCode": "yy",
+      "idDs": 2,
+      "activity": false
+    },
+    {
+      "id": 9,
+      "facilityName": "fdgdyyy",
+      "shortCode": "df",
+      "idDs": 2,
+      "activity": false
+    },
+    {
+      "id": 11,
+      "facilityName": "yrtyyy",
+      "shortCode": "yy",
+      "idDs": 2,
+      "activity": false
+    },
+    {
+      "id": 13,
+      "facilityName": "kkkkkkky",
+      "shortCode": "kk",
+      "idDs": 45,
+      "activity": true
+    },
+    {
+      "facilityName": "Facility One",
+      "shortCode": "ty",
+      "idDs": "56",
+      "activity": true,
+      "id": 16
+    },
+    {
+      "facilityName": "Facility Two",
+      "shortCode": "FT",
+      "idDs": "2",
+      "activity": true,
+      "id": 17
+    },
+    {
+      "facilityName": "ddd",
+      "shortCode": "ddd",
+      "idDs": "343",
+      "activity": true,
+      "id": 20
+    },
+    {
+      "facilityName": "from Hansa Pc",
+      "shortCode": "fhp",
+      "idDs": "45",
+      "activity": false,
+      "id": 24
+    },
+    {
+      "facilityName": "MyPc",
+      "shortCode": "p",
+      "idDs": "5",
+      "activity": true,
+      "id": 26
+    },
+    {
+      "facilityName": "from network",
+      "shortCode": "nt",
+      "idDs": "5",
+      "activity": true,
+      "id": 27
+    },
+    {
+      "facilityName": "Facility One One",
+      "shortCode": "AA",
+      "idDs": 9,
+      "activity": true,
+      "id": 29
+    }
+  ]
+}
