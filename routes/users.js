@@ -55,12 +55,16 @@ router.post("/register", function (req, res) {
   const password = req.body.password;
 
   const user = { username: username, email: email, password: password };
-  const isUserAdded = userController.addUser(user);
-  if (isUserAdded) {
-    res.status(201).send("User Added");
-  } else {
-    res.status(500).send("Error");
-  }
+  userController
+    .addUser(user)
+    .then((data) => {
+      if (data.status) {
+        res.status(201).json(data);
+      } else {
+        res.status(500).json(data);
+      }
+    })
+    .catch((err) => console.log(err));
 });
 
 module.exports = router;

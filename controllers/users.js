@@ -3,18 +3,18 @@ const FileSync = require("lowdb/adapters/FileSync");
 const adapter = new FileSync("./data/users.json");
 const db = low(adapter);
 
-function addUser(user) {
+async function addUser(user) {
   db.setState(db.getState());
-  const ID = db.get("users").size().value() + 1;
-  const isUser = db.get("users").find({ email: user.email }).value();
+  const isUser = await db.get("users").find(data => data.email == user.email).value();   
   if (!isUser) {
+    const ID = db.get("users").size().value() + 1; 
     user["id"] = ID;
     db.get("users")
       .push(user)
-      .write()      
-    return true;
+      .write()
+    return { status:true, message:"User Added" };
   }
-  return false;
+  return { status:false, message:"This email already registered" };
 }
 
 function deleteUser(userId) {
@@ -41,13 +41,7 @@ async function loginUser(user) {
     .get("users")
     .find(user)
     .value();
-  return isUser !== undefined
-  // if (isUser !== undefined) {
-  //   return true;
-  // } else {
-  //     console.log(false);
-  //     return false;
-  // }
+  return isUser !== undefined  
 }
 
 module.exports = { addUser, deleteUser, updateUser, loginUser };

@@ -7,34 +7,10 @@
       "password": "testpassword"
     },
     {
-      "username": "test",
-      "email": "test@email.com",
-      "password": "testpassword",
+      "username": "Hirusha Fernando",
+      "email": "heshanhfernando@gmail.com",
+      "password": "root",
       "id": 2
-    },
-    {
-      "username": "root",
-      "email": "root@gmail.com",
-      "password": "toor",
-      "id": 3
-    },
-    {
-      "username": "rootkk",
-      "email": "rootkkkk@email.com",
-      "password": "toor",
-      "id": 4
-    },
-    {
-      "username": "rodfsfotkk",
-      "email": "rodfsfsfsdfsfsdotkkkk@email.com",
-      "password": "toordfsfds",
-      "id": 5
-    },
-    {
-      "username": "hirusha",
-      "email": "hirusha@gmail.com",
-      "password": "hirusha123",
-      "id": 6
     }
   ]
 }
