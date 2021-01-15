@@ -3,6 +3,7 @@ const FileSync = require("lowdb/adapters/FileSync");
 const adapter = new FileSync("./data/users.json");
 const db = low(adapter);
 
+
 async function addUser(user) {
   db.setState(db.getState());
   const isUser = await db.get("users").find(data => data.email == user.email).value();   

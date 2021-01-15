@@ -16,8 +16,8 @@ router.post("/login", async function (req, res) {
   const doc = await userController.loginUser(user);
 
   if (doc) {
-    const userEmail = { email: user.email };
-    const token = jwt.sign(userEmail, SECRET, { expiresIn: 600 });
+    const userData = { email: user.email, 'role':'admin' };
+    const token = jwt.sign(userData, SECRET, { expiresIn: 600 });
     const refreshToken = randToken.uid(256);
     refreshTokens[refreshToken] = user.email;
     res.status(200).json({ jwt: token, refreshToken: refreshToken });
@@ -39,8 +39,8 @@ router.post("/refresh", function (req, res) {
 
   if (refreshToken in refreshTokens) {
     const user = {
-      username: refreshTokens[refreshToken],
-      role: "admin",
+      email: refreshTokens[refreshToken],
+      'role': 'admin'
     };
     const token = jwt.sign(user, SECRET, { expiresIn: 600 });
     res.json({ jwt: token });

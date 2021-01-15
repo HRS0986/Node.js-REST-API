@@ -1,16 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "admin",
-      "email": "admin@gmail.com",
-      "password": "testpassword"
-    },
-    {
       "username": "Hirusha Fernando",
       "email": "heshanhfernando@gmail.com",
-      "password": "root",
-      "id": 2
+      "password": "63a9f0ea7bb98050796b649e85481845",
+      "id": 1
     }
   ]
 }
